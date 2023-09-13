@@ -17,7 +17,8 @@ chars = [
 ]
 
 
-def reduce_chars(result, char): return result + get_char_by_binary_number(char)
+def reduce_chars(result: str, char: str) -> str:
+    return result + get_char_by_binary_number(char)
 
 
 print(reduce(reduce_chars, chars, ''))
